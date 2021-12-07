@@ -1,1 +1,3 @@
-# DVPSPDC-3
+# DVPSPDC-3 by Netology (Homeworks)
+
+Reposotiry for homeworks
