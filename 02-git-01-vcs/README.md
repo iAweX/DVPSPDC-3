@@ -137,3 +137,24 @@ no changes added to commit (use "git add" and/or "git commit -a")
  1 file changed, 1 insertion(+), 1 deletion(-)
 04:36:17 awex@beelink DVPSPDC-3 ±|main|→
 ```
+
+Добавление .gitignore (само содержиое можно посмотреть в репозитории, добавлены terraform, vscode, python, idea)
+
+```bash
+04:52:21 awex@beelink DVPSPDC-3 ±|main|→ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+05:00:40 awex@beelink DVPSPDC-3 ±|main ✗|→ git add .gitignore
+05:03:25 awex@beelink DVPSPDC-3 ±|main ✗|→ git commit -m "Added .gitignore"
+[main 2f63be0] Added .gitignore
+ 1 file changed, 279 insertions(+)
+ create mode 100644 .gitignore
+05:04:09 awex@beelink DVPSPDC-3 ±|main|→
+```
