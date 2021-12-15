@@ -86,3 +86,54 @@ Changes to be committed:
 10. Добавляем строки в 02-git-01-vcs/README.md и смотрим diff
 
 ```diff
+04:22:48 awex@beelink DVPSPDC-3 ±|main ✗|→ git diff 02-git-01-vcs/README.md
+diff --git a/02-git-01-vcs/README.md b/02-git-01-vcs/README.md
+index a04b81f..29b9566 100644
+--- a/02-git-01-vcs/README.md
++++ b/02-git-01-vcs/README.md
+@@ -86,3 +86,6 @@ Changes to be committed:
+
++
++11. Просто какие-то изменения
+```
+
+11. Так как проверять все долго и неинтересно напишу просто, что `git diff` покажет изменеия между текущим и зафиксированным, а `git diff --staged` между зафиксированным и закоммиченным.
+
+12. Доделаем все изменения, проверим и закоммитим
+
+```bash
+04:23:33 awex@beelink DVPSPDC-3 ±|main ✗|→ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   02-git-01-vcs/README.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+04:33:44 awex@beelink DVPSPDC-3 ±|main ✗|→ git add 02-git-01-vcs/README.md 
+04:34:05 awex@beelink DVPSPDC-3 ±|main ✗|→ git commit -m "02-git-01-vcs"
+[main eb2f754] 02-git-01-vcs
+ 1 file changed, 88 insertions(+)
+ create mode 100644 02-git-01-vcs/README.md
+04:34:25 awex@beelink DVPSPDC-3 ±|main ✗|→ git status 
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+04:35:09 awex@beelink DVPSPDC-3 ±|main ✗|→ git add README.md
+04:35:20 awex@beelink DVPSPDC-3 ±|main ✗|→ git commit -m "fix errors in /README.md"
+[main 6d098dc] fix errors in /README.md
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+04:36:17 awex@beelink DVPSPDC-3 ±|main|→
+```
