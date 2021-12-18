@@ -159,6 +159,34 @@ nothing added to commit but untracked files present (use "git add" to track)
 05:04:09 awex@beelink DVPSPDC-3 ±|main|→
 ```
 
+Описание файла terraform/.gitignore. [Документация](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+
+```bash
+# Исключает директорию .terraform с её содержимым в любой директории репозитария.
+**/.terraform/*
+
+# Исключает все файлы с расшрением tfstate и tfstate.*
+*.tfstate
+*.tfstate.*
+
+# Исключает все файлы crash.log и crash.*.log. Символ "*" заменяет любое количество символов (ноль или больше)
+crash.log
+crash.*.log
+
+# Исключает все файлы с расширением tfvars. Символ "*" заменяет любое количество символов (ноль или больше)
+*.tfvars
+
+# Исключает все указанные ниже вайлы. Символ "*" заменяет любое количество символов (ноль или больше)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Исключает все файлы с именами указанными ниже
+.terraformrc
+terraform.rc
+```
+
 Эксперементируем с `git mv` и 'git rm'
 
 ```bash
