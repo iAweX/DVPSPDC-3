@@ -8,7 +8,7 @@
 
 - Bash:
   
-  ![bahs](img/bash.png)
+  ![bash](img/bash.png)
   
 - Markdown:
   
@@ -22,7 +22,6 @@
   
   ![Jsonnet](img/jsonnet.png)
 
-
 ## Задание №2 - Описание жизненного цикла задачи (разработки нового функционала)
 
-![](img/devops.png)
+![devops](img/devops.png)
