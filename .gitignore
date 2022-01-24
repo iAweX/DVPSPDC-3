@@ -358,3 +358,5 @@ fabric.properties
 .idea/DVPSPDC-3.iml
 .idea/modules.xml
 .idea/vcs.xml
+.idea/misc.xml
+.idea/*
